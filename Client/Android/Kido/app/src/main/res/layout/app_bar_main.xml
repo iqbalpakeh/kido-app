@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".core.ActivityHome">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        fab:fab_addButtonColorNormal="@color/fab_default"
+        fab:fab_addButtonColorPressed="@color/fab_pressed"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_labelStyle="@style/menu_labels_style">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_diaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:fab_size="normal"
+            app:fab_title="Add diaper"
+            fab:fab_colorNormal="@color/teal_500"
+            fab:fab_colorPressed="@color/teal_400"
+            fab:fab_icon="@drawable/ic_diaper_fab" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_feeding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:fab_size="normal"
+            app:fab_title="Add feeding"
+            fab:fab_colorNormal="@color/pink_500"
+            fab:fab_colorPressed="@color/pink_400"
+            fab:fab_icon="@drawable/ic_feeding_fab" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:fab_size="normal"
+            app:fab_title="Add sleeping"
+            fab:fab_colorNormal="@color/indigo_500"
+            fab:fab_colorPressed="@color/indigo_400"
+            fab:fab_icon="@drawable/ic_sleep_fab" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_measurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:fab_size="normal"
+            app:fab_title="Add measurement"
+            fab:fab_colorNormal="@color/amber_500"
+            fab:fab_colorPressed="@color/amber_400"
+            fab:fab_icon="@drawable/ic_measurement_fab" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_disease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:fab_size="normal"
+            app:fab_title="Add disease"
+            fab:fab_colorNormal="@color/light_blue_500"
+            fab:fab_colorPressed="@color/light_blue_400"
+            fab:fab_icon="@drawable/ic_disease_fab" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_vaccine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="normal"
+            app:fab_title="Add vaccine"
+            fab:fab_colorNormal="@color/green_500"
+            fab:fab_colorPressed="@color/green_400"
+            fab:fab_icon="@drawable/ic_vaccine_fab" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</android.support.design.widget.CoordinatorLayout>

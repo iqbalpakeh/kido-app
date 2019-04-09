@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_food_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Feeding Type"
+            android:textColor="@color/text_primary_pink"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_solid_food" />
+
+            <Button
+                android:id="@+id/solid_food_selector"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif"
+                android:gravity="left|center_vertical"
+                android:text="Solid Food"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="24sp"
+                android:theme="@style/FlatButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_liquid_food" />
+
+            <Button
+                android:id="@+id/liquid_food_selector"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif"
+                android:gravity="left|center_vertical"
+                android:text="Liquid Food"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="24sp"
+                android:theme="@style/FlatButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_solid_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Solid Food"
+            android:textColor="@color/text_primary_pink"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/food_name_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/str_food_name"
+            android:textSize="20sp"
+            android:inputType="textCapSentences" />
+
+        <LinearLayout
+            android:id="@+id/container_food_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/food_volume_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/str_amount"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="gr"
+                android:textColor="@color/default_font"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/solid_food_confirm"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/str_OK"
+                android:textColor="@color/default_font"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_liquid_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Liquid Food"
+            android:textColor="@color/text_primary_pink"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_breastfeeding" />
+
+            <Button
+                android:id="@+id/breastmilk_selector"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif"
+                android:gravity="left|center_vertical"
+                android:text="Breast milk"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="24sp"
+                android:theme="@style/FlatButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_formula" />
+
+            <Button
+                android:id="@+id/formula_selector"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif"
+                android:gravity="left|center_vertical"
+                android:text="Formula Milk"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="24sp"
+                android:theme="@style/FlatButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_formula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="Formula Milk"
+            android:textColor="@color/text_primary_pink"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/entry_formula_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/str_volume"
+                android:inputType="numberDecimal"
+                android:padding="16dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="mL"
+                android:textColor="@color/text_secondary_dark"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_formula_confirm"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="8dp"
+            android:text="@string/str_OK"
+            android:textColor="@color/text_secondary_dark"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_breastmilk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:gravity="left"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Breastmilk"
+            android:textColor="@color/text_primary_pink"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_left_breastfeeding" />
+
+            <Button
+                android:id="@+id/left_breastmilk_selector"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif"
+                android:gravity="left|center_vertical"
+                android:text="Left Side"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="24sp"
+                android:theme="@style/FlatButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_right_breastfeeding" />
+
+            <Button
+                android:id="@+id/right_breastmilk_selector"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif"
+                android:gravity="left|center_vertical"
+                android:text="Right Side"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="24sp"
+                android:theme="@style/FlatButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_breastpump" />
+
+            <Button
+                android:id="@+id/pump_breastmilk_selector"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif"
+                android:gravity="left|center_vertical"
+                android:text="Pump"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="24sp"
+                android:theme="@style/FlatButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_breastpump"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="Pump breastmilk"
+            android:textColor="@color/text_primary_pink"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/pump_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="@string/str_volume"
+                    android:inputType="numberDecimal"
+                    android:padding="16dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="mL"
+                    android:textColor="@color/text_secondary_dark"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/pump_pumping"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:text="@string/str_Pumping"
+                    android:textColor="@color/text_secondary_dark"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/pump_feeding"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed"
+                    android:padding="8dp"
+                    android:text="@string/str_Feeding"
+                    android:textColor="@color/text_secondary_dark"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_duration" />
+
+</LinearLayout>

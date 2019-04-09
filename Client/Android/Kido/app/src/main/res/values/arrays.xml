@@ -1,0 +1,30 @@
+<resources>
+    <string-array name="gender_array">
+        <item>Boy</item>
+        <item>Girl</item>
+    </string-array>
+
+    <string-array name="add_image_method">
+        <item>Use camera</item>
+        <item>From gallery</item>
+    </string-array>
+
+    <string-array name="time_filter_list">
+        <item>@string/str_Today</item>
+        <item>@string/str_This_week</item>
+        <item>@string/str_This_month</item>
+        <item>@string/str_All</item>
+    </string-array>
+
+    <string-array name="time_filter_values">
+        <item>@string/str_for_today</item>
+        <item>@string/str_for_this_week</item>
+        <item>@string/str_for_this_month</item>
+        <item>@string/str_all</item>
+    </string-array>
+
+    <string-array name="duration_method">
+        <item>@string/str_Quick</item>
+        <item>@string/str_Stopwatch</item>
+    </string-array>
+</resources>

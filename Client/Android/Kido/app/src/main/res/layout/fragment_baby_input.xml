@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink_transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="32dp"
+        android:paddingTop="2dp"
+        android:text="@string/str_Please_fill_in_your_baby_information"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/text_size_medium" />
+
+    <ImageButton
+        android:id="@+id/baby_input_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_background"
+        android:src="@drawable/ic_action_picture_dark" />
+
+    <EditText
+        android:id="@+id/baby_input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:hint="@string/str_Baby_name"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/baby_input_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textColor="@color/transparent_black" />
+
+    <Spinner
+        android:id="@+id/baby_input_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/baby_input_cancel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background"
+            android:src="@drawable/ic_action_cancel_dark" />
+
+        <ImageButton
+            android:id="@+id/baby_input_accept"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background"
+            android:src="@drawable/ic_action_accept_dark" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

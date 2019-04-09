@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter_0_to_2_years"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/str_0_to_2_years" />
+    <item
+        android:id="@+id/filter_2_to_5_years"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/str_2_to_5_years" />
+</menu>

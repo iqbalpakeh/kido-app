@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+     https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="divider_thickness">8dp</dimen>
+
+    <!-- Card Background radius -->
+    <dimen name="card_background_radius">2dp</dimen>
+
+    <!-- Android standard typographic scale per design guidelines:
+     http://developer.android.com/design/style/typography.html  -->
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+
+    <!-- Pie Chart dimension -->
+    <dimen name="header_fragment_pie_chart_size">60dp</dimen>
+
+    <!-- Header dimension is calculated by using View.getHeight() api. The size is generated
+     in pixels in XXHDPI device (nexus 5). So, we need convert it to dp by dividing it by 3.
+     Read the Android Design guidline: http://developer.android.com/design/style/iconography.html-->
+    <dimen name="feeding_header_size">132dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="app_bar_height">160dp</dimen>
+
+</resources>

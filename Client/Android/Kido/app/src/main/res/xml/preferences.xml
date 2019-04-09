@@ -1,0 +1,85 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Duration counter method">
+
+        <ListPreference
+            android:title="@string/str_Breastfeeding"
+            android:key="@string/var_KEY_COUNTER_METHOD_BREASTFEEDING"
+            android:summary="@string/str_Quick"
+            android:entries="@array/duration_method"
+            android:entryValues="@array/duration_method"
+            android:defaultValue="@string/str_Quick"/>
+
+        <ListPreference
+            android:title="@string/str_Sleep"
+            android:key="@string/var_KEY_COUNTER_METHOD_SLEEP"
+            android:summary="@string/str_Quick"
+            android:entries="@array/duration_method"
+            android:entryValues="@array/duration_method"
+            android:defaultValue="@string/str_Quick"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/str_Default_time_filter">
+
+        <ListPreference
+            android:title="@string/str_Timeline"
+            android:key="@string/var_KEY_DEF_TIME_FILTER_TIMELINE"
+            android:summary="@string/str_This_week"
+            android:entries="@array/time_filter_list"
+            android:entryValues="@array/time_filter_values"
+            android:defaultValue="@string/str_for_this_week"/>
+
+        <ListPreference
+            android:title="@string/str_Feeding"
+            android:key="@string/var_KEY_DEF_TIME_FILTER_FEEDING"
+            android:summary="@string/str_This_week"
+            android:entries="@array/time_filter_list"
+            android:entryValues="@array/time_filter_values"
+            android:defaultValue="@string/str_for_this_week"/>
+
+        <ListPreference
+            android:title="@string/str_Diaper"
+            android:key="@string/var_KEY_DEF_TIME_FILTER_DIAPER"
+            android:summary="@string/str_This_week"
+            android:entries="@array/time_filter_list"
+            android:entryValues="@array/time_filter_values"
+            android:defaultValue="@string/str_for_this_week"/>
+
+        <ListPreference
+            android:title="@string/str_Sleep"
+            android:key="@string/var_KEY_DEF_TIME_FILTER_SLEEP"
+            android:summary="@string/str_This_week"
+            android:entries="@array/time_filter_list"
+            android:entryValues="@array/time_filter_values"
+            android:defaultValue="@string/str_for_this_week"/>
+
+        <ListPreference
+            android:title="@string/str_Growth"
+            android:key="@string/var_KEY_DEF_TIME_FILTER_GROWTH"
+            android:summary="@string/str_This_week"
+            android:entries="@array/time_filter_list"
+            android:entryValues="@array/time_filter_values"
+            android:defaultValue="@string/str_for_this_week"/>
+
+        <ListPreference
+            android:title="@string/str_Disease"
+            android:key="@string/var_KEY_DEF_TIME_FILTER_DISEASE"
+            android:summary="@string/str_This_week"
+            android:entries="@array/time_filter_list"
+            android:entryValues="@array/time_filter_values"
+            android:defaultValue="@string/str_for_this_week"/>
+
+        <ListPreference
+            android:title="@string/str_Vaccine"
+            android:key="@string/var_KEY_DEF_TIME_FILTER_VACCINE"
+            android:summary="@string/str_This_week"
+            android:entries="@array/time_filter_list"
+            android:entryValues="@array/time_filter_values"
+            android:defaultValue="@string/str_for_this_week"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

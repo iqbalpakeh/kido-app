@@ -1,0 +1,110 @@
+<resources>
+
+    <style name="Theme.Custom_style_01" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarItemBackground">
+            @drawable/selectable_background_custom_style_01
+        </item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Custom_style_01</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Custom_style_01</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Custom_style_01</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Custom_style_01</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Custom_style_01</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_custom_style_01
+        </item>
+        <item name="android:actionModeSplitBackground">
+            @drawable/cab_background_bottom_custom_style_01
+        </item>
+        <item name="android:actionModeCloseButtonStyle">
+            @style/ActionButton.CloseMode.Custom_style_01
+        </item>
+        <item name="android:textViewStyle">@style/RobotTextStyle</item>
+
+    </style>
+
+    <style name="ActionBar.Solid.Custom_style_01" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:background">@drawable/ab_solid_custom_style_01</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_custom_style_01</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_custom_style_01</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Custom_style_01</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Custom_style_01" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_custom_style_01</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Custom_style_01</item>
+    </style>
+
+    <style name="PopupMenu.Custom_style_01" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_custom_style_01</item>
+    </style>
+
+    <style name="DropDownListView.Custom_style_01" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_custom_style_01</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Custom_style_01" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_custom_style_01</item>
+    </style>
+
+    <style name="DropDownNav.Custom_style_01" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_custom_style_01</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_custom_style_01</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_custom_style_01</item>
+    </style>
+
+    <style name="ProgressBar.Custom_style_01" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_custom_style_01</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Custom_style_01" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_custom_style_01</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Custom_style_01.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Custom_style_01</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Custom_style_01</item>
+    </style>
+
+    <!-- Roboto Text Style-->
+    <style name="RobotTextStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="RaisedButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/pink_500</item>
+        <item name="colorButtonNormal">@color/blue_500</item>
+    </style>
+
+    <style name="FlatButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/pink</item>
+    </style>
+
+</resources>

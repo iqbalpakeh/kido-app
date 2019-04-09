@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Activity Log" >
+        <menu>
+            <item
+                android:id="@+id/nav_timeline"
+                android:icon="@drawable/ic_timeline_navigation"
+                android:title="@string/str_Timeline"
+                android:checkable="true" />
+            <item
+                android:id="@+id/nav_diaper"
+                android:icon="@drawable/ic_diaper_navigation"
+                android:title="@string/str_Diaper"
+                android:checkable="true" />
+            <item
+                android:id="@+id/nav_feeding"
+                android:icon="@drawable/ic_feeding_navigation"
+                android:title="@string/str_Feeding"
+                android:checkable="true" />
+            <item
+                android:id="@+id/nav_sleep"
+                android:icon="@drawable/ic_sleep_navigation"
+                android:title="@string/str_Sleep"
+                android:checkable="true" />
+            <item
+                android:id="@+id/nav_measurement"
+                android:icon="@drawable/ic_measurement_navigation"
+                android:title="@string/str_Growth"
+                android:checkable="true" />
+            <item
+                android:id="@+id/nav_disease"
+                android:icon="@drawable/ic_disease_navigation"
+                android:title="@string/str_Disease"
+                android:checkable="true" />
+            <item
+                android:id="@+id/nav_vaccine"
+                android:icon="@drawable/ic_vaccine_navigation"
+                android:title="@string/str_Vaccine"
+                android:checkable="true" />
+        </menu>
+    </item>
+
+    <item android:title="Growing Chart" >
+        <menu>
+            <item
+                android:id="@+id/nav_body_height"
+                android:icon="@drawable/ic_body_height_chart"
+                android:title="@string/str_Body_Height"
+                android:checkable="true" />
+            <item
+                android:id="@+id/nav_body_weight"
+                android:icon="@drawable/ic_body_weight_chart"
+                android:title="@string/str_Body_Weight"
+                android:checkable="true" />
+            <item
+                android:id="@+id/nav_head_circumference"
+                android:icon="@drawable/ic_head_circumference_chart"
+                android:title="@string/str_Head_Circumference"
+                android:checkable="true" />
+        </menu>
+    </item>
+
+</menu>

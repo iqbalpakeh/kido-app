@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_background_shadow"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:paddingTop="32dp"
+            android:paddingBottom="32dp"
+            android:text="Vaccine Appointment"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="16dp"
+            android:text="Name"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/vaccine_name_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="4dp"
+            android:textColor="@color/default_font"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="16dp"
+            android:text="Location"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/vaccine_location_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="4dp"
+            android:textColor="@color/default_font"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="16dp"
+            android:text="Notes"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/vaccine_notes_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="4dp"
+            android:textColor="@color/default_font"
+            android:textSize="@dimen/text_size_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/done"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_height="50dp"
+                android:layout_width="130dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Stop Reminder"
+                android:textColor="@color/default_font"
+                android:textSize="@dimen/text_size_medium"
+                android:background="@drawable/button_background" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
